@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: edu.coursera.parallel.ReciprocalArraySumTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 6.408 sec <<< FAILURE! - in edu.coursera.parallel.ReciprocalArraySumTest
+testParManyTaskTwoMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 0.044 sec  <<< ERROR!
+java.lang.ArithmeticException: / by zero
+	at edu.coursera.parallel.ReciprocalArraySum$ReciprocalArraySumTask.<init>(ReciprocalArraySum.java:131)
+	at edu.coursera.parallel.ReciprocalArraySum.parManyTaskArraySum(ReciprocalArraySum.java:201)
+	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskTwoMillion(ReciprocalArraySumTest.java:140)
+
+testParManyTaskTwoHundredMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 2.827 sec  <<< ERROR!
+java.lang.ArithmeticException: / by zero
+	at edu.coursera.parallel.ReciprocalArraySum$ReciprocalArraySumTask.<init>(ReciprocalArraySum.java:131)
+	at edu.coursera.parallel.ReciprocalArraySum.parManyTaskArraySum(ReciprocalArraySum.java:201)
+	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:151)
+
+testParSimpleTwoMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 0.028 sec  <<< ERROR!
+java.lang.ArithmeticException: / by zero
+	at edu.coursera.parallel.ReciprocalArraySum$ReciprocalArraySumTask.<init>(ReciprocalArraySum.java:131)
+	at edu.coursera.parallel.ReciprocalArraySum.parManyTaskArraySum(ReciprocalArraySum.java:201)
+	at edu.coursera.parallel.ReciprocalArraySum.parArraySum(ReciprocalArraySum.java:175)
+	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:77)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParSimpleTwoMillion(ReciprocalArraySumTest.java:117)
+
+testParSimpleTwoHundredMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 3.508 sec  <<< ERROR!
+java.lang.ArithmeticException: / by zero
+	at edu.coursera.parallel.ReciprocalArraySum$ReciprocalArraySumTask.<init>(ReciprocalArraySum.java:131)
+	at edu.coursera.parallel.ReciprocalArraySum.parManyTaskArraySum(ReciprocalArraySum.java:201)
+	at edu.coursera.parallel.ReciprocalArraySum.parArraySum(ReciprocalArraySum.java:175)
+	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:77)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParSimpleTwoHundredMillion(ReciprocalArraySumTest.java:127)
+
